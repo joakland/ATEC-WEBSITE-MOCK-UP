@@ -253,7 +253,7 @@ a:hover {
   opacity: 0.95;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-.page-hero.contact-hero .about-hero {
+.page-hero.contact-hero.about-hero {
   position: relative;
   background-image: url('../media/507652268_3507046752765410_8198095611458683913_n.jpg'); 
   background-size: cover;
