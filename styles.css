@@ -446,22 +446,6 @@ a:hover {
   object-position: center; 
 }
 
-/* Map Feature Section */
-.map-caption {
-  text-align: center;
-  font-size: 5rem;
-  color: var(--accent);
-  margin-top: 12rem;
-}
-
-.map-container {
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 2rem;
-  max-width: 900px;
-  max-height: 700px;
-}
 /* SNTC section */
 .sntc-section {
   padding: 80px 0;
@@ -898,7 +882,7 @@ a:hover {
 /* Isolated layout grid for the glass links fb pages on training/edu */
 .facebook-bg-section {
   position: relative;
-  background-image: url('../media/FB_IMG_1709776769969.webp');
+  background-image: url('media/FB_IMG_1709776769969.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
