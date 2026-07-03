@@ -255,7 +255,7 @@ a:hover {
 }
 .page-hero.contact-hero {
   position: relative;
-  background-image: url('../media/507652268_3507046752765410_8198095611458683913_n.jpg'); 
+  background-image: url('./media/507652268_3507046752765410_8198095611458683913_n.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
