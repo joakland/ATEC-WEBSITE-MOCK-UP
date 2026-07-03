@@ -1702,7 +1702,7 @@ summary.indigenous-callout::after {
   padding: 60px 20px; 
   width: 100%;
   background-color: #f9f9f9;
-  background-image: url('../media/unsplash-image-npxXWgQ33ZQ.webp');
+  background-image: url('media/unsplash-image-npxXWgQ33ZQ.webp');
   background-size: cover;
   background-position: center;
 }
