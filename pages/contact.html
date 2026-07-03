@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us – ATEC</title>
+    <meta name="description" content="Get in touch with ATEC in Kamloops, BC. Find our phone number, email address, physical location, or submit our online contact form." />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          
+          <a href="../index.html" class="logo"><img src="../media/ATEC_LogoColor_SM-removebg-preview.webp" alt="ATEC Logo" height="225px"></a>
+        </div>
+        <button class="nav-toggle" id="menu-toggle" aria-label="Toggle Options Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="../pages/about.html">About ATEC</a></li>
+            <li><a href="../pages/offices.html">Office Locations</a></li>
+            <li><a href="../pages/train-educ.html">Training/Education</a></li>
+            <li><a href="../pages/iset.html">ISET Programs</a></li>
+            <li><a href="../pages/resources.html">Resources</a></li>
+            <li><a href="../pages/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-inner-content">
+          <h1>Contact Us</h1>
+            <p class="tagline">Please feel free to contact us for more information about our<br> ASETS Programs &amp; Services.</p>
+            <p class="hero-phrase">Leading the way towards a better you!</p>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-layout-wrapper">
+          <div class="info-sidebar">
+            <div class="info-block">
+              <h2>Get in Touch</h2>
+              <p><strong>Phone:</strong> <a href="tel:+12505544556">250-554-4556</a></p>
+              <p><strong>Email:</strong> <a href="mailto:atecreception@shuswapnation.org">atecreception@shuswapnation.org</a></p>
+            </div>
+            <div class="info-block">
+              <h2>Visit Us</h2>
+              <address>
+                144 Briar Ave.<br />
+                Kamloops, BC V2B 1C1
+              </address>
+              <p><a class="button" href="https://www.google.com/maps/search/?api=1&query=144+Briar+Ave+Kamloops+BC+V2B+1C1" target="_blank"     rel="noopener">Open in Maps</a>
+              </p>
+            </div>
+          </div>
+          <div class="form-container">
+            <h2>Get in Touch</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form action="https://formsubmit.co/atecreception@shuswapnation.org" method="POST" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name (Required)</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                  <span class="error-message">First name is required.</span>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name (Required)</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                  <span class="error-message">Last name is required.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address (Required)</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message">Please enter a valid email address.</span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number (Required)</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="recipient">I Am Looking For: (Required)</label>
+                <select id="recipient" name="recipient" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="training">Client- Training/Certification</option>
+                  <option value="job-starts">Client-Job Starts</option>
+                  <option value="employment-counselling">Client-Employment Counselling</option>
+                  <option value="wage-subsidy">Employer-Wage Subsidy Information</option>
+                  <option value="summer-student">Employer-Summer Student Information</option>
+                  <option value="direct-purchase">Employer-Direct Purchase Information</option>
+                </select>
+                <span class="error-message">Please select a recipient.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Please Tell Us A Bit About Your Situation (Required)</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="error-message">Please explain your needs.</span>
+              </div>
+              <button type="submit" id="submitBtn">Send Message</button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <p><a class="button" href="../index.html">← Back to Home</a></p></section>
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Contact</h2>
+            <address>
+              ASETS<br />
+              144 Briar Avenue,<br />
+              Kamloops, BC, V2B 1C1, Canada<br />
+              <a href="tel:+12505544556">250-554-4556</a><br />
+              <a href="mailto:atecreception@shuswapnation.org">atecreception@shuswapnation.org</a>
+            </address>
+          </div>
+          <div>
+            <h2>Hours</h2>
+            <ul class="hours">
+              <li><span>Mon</span><span>8:30am – 4:30pm</span></li>
+              <li><span>Tue</span><span>8:30am – 4:30pm</span></li>
+              <li><span>Wed</span><span>8:30am – 4:30pm</span></li>
+              <li><span>Thu</span><span>8:30am – 4:30pm</span></li>
+              <li><span>Fri</span><span>8:30am – 4:30pm</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> ATEC – Aboriginal Training &amp; Employment Centre</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
