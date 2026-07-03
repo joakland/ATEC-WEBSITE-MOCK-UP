@@ -1482,13 +1482,13 @@ ul.checks li::before {
 /* Image 1: Employment Opportunities Panel Background */
 #employment {
   background-image: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.85)), 
-                    url('../media/433234102_875367477722935_4318586014014157203_n.webp');
+                    url('media/433234102_875367477722935_4318586014014157203_n.webp');
 }
 
 /* Image 2: Training & Resources Panel Background */
 #training {
   background-image: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.85)), 
-                    url('../media/HEO+Grad.webp');
+                    url('media/HEO+Grad.webp');
 }
 
 /* Force all standard titles within these sections to stand out in bright white */
