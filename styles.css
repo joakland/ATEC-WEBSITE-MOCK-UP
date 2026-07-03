@@ -199,7 +199,7 @@ a:hover {
 /* Interior Pages Main Branding Elements */
 .page-hero.about-hero {
   position: relative;
-  background-image: url('../media/about-contact-hero.jpg'); 
+  background-image: url('media/about-contact-hero.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -255,7 +255,7 @@ a:hover {
 }
 .page-hero.contact-hero {
   position: relative;
-  background-image: url('../media/about-contact-hero.jpg'); 
+  background-image: url('media/about-contact-hero.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
