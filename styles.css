@@ -449,7 +449,7 @@ a:hover {
 /* SNTC section */
 .sntc-section {
   padding: 80px 0;
-  background-color: #ffffff; /* Or a very soft off-white */
+  background-color: #ffffff; 
 }
 
 .section-subtitle {
@@ -457,7 +457,7 @@ a:hover {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #c0392b; /* Use your primary cultural accent color here */
+  color: #c0392b;
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -471,7 +471,7 @@ a:hover {
 .info-card {
   background: #f9f9f9;
   padding: 25px;
-  border-left: 4px solid #c0392b; /* Connects visually with your accent color */
+  border-left: 4px solid #c0392b; color */
   border-radius: 4px;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
@@ -648,6 +648,75 @@ a:hover {
   filter: brightness(1.15); 
 }
 /*4. ABOUT PAGE PANEL SPECIFIC PAGE LAYOUT*/
+.about-split-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center; 
+  max-width: 1100px;
+  margin: 2rem auto;
+  margin-bottom: 7rem;
+  padding: 0 1rem;
+}
+
+/* Typography refinements */
+.about-lead {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-sub-lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.impact-statement {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid var(--accent, #b38234);
+  padding: 1.75rem 2rem;
+  border-radius: 4px;
+}
+
+.impact-statement h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.impact-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.impact-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.impact-list li:last-child {
+  margin-bottom: 0;
+}
+
+.impact-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent, #b38234);
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .about-split-row {
+    grid-template-columns: 1.2fr 0.8fr; /* Left side slightly wider than the right card */
+  }
+}
+
 .nations {
   display: grid;
   gap: 2rem;
