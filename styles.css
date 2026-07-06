@@ -1486,7 +1486,7 @@ ul.checks li::before {
 
 /* Image 2: Training & Resources Panel Background */
 #training {
-  background-image: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.85)), url('media/HEO+Grad.webp');
+  background-image: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.85)), url('media/HEO-Grad.webp');
 }
 
 /* Force all standard titles within these sections to stand out in bright white */
