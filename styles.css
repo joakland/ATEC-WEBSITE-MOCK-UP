@@ -449,7 +449,17 @@ a:hover {
 /* SNTC section */
 .sntc-section {
   padding: 80px 0;
-  background-color: #ffffff; 
+  background-color: #f9f9f9;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('media/oakland.secwepemc.1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sntc-main-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .section-subtitle {
@@ -457,11 +467,10 @@ a:hover {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #c0392b;
+  color: #c0392b; 
   margin-bottom: 10px;
   font-weight: bold;
 }
-
 
 .sntc-grid {
   display: grid;
@@ -470,12 +479,13 @@ a:hover {
 }
 
 .info-card {
-  background: #f9f9f9;
+  background: rgba(255, 255, 255, 0.75); 
+  backdrop-filter: blur(8px); 
   padding: 25px;
   border-left: 4px solid #c0392b; 
   border-radius: 4px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
 .info-card h3 {
@@ -575,6 +585,19 @@ a:hover {
   box-sizing: border-box;
   overflow: hidden; 
 }
+.wave-banner-section-second {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('media/Screenshot 2026-07-06 134817.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 200px 20px;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
 
 /* The SVG Wave Structural Engine */
 .banner-wave {
@@ -659,7 +682,7 @@ a:hover {
   margin: 0 auto;
   padding: 3.5rem 2rem;
   border-radius: 12px;
-  background-image: linear-gradient(rgba(17, 24, 39, 0.82), rgba(17, 24, 39, 0.9)), url('media/un-perfekt-handshake-4002834_1920.jpg');
+  background-image: linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.68)), url('media/un-perfekt-handshake-4002834_1920.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -752,34 +775,73 @@ a:hover {
 
 @media (min-width: 768px) {
   .about-split-row {
-    grid-template-columns: 1.2fr 0.8fr; /* Left side slightly wider than the right card */
+    grid-template-columns: 1.2fr 0.8fr;
   }
+}
+
+.nations-bg-section {
+  background-image: linear-gradient(rgba(17, 24, 39, 0.60), rgba(17, 24, 39, 0.70)), url('media/oakland.secwepemc.2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 1.5rem;
+  color: #ffffff;
+}
+
+.nations-container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.nations-intro {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
 }
 
 .nations {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  margin: 2rem 0;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .nations h2 {
-  font-size: 1.25rem;
-  color: var(--accent);
-  border-bottom: 2px solid var(--border);
-  padding-bottom: 0.4rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  color: #ffffff; 
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nations ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+
 .nations li {
-  padding: 0.35rem 0;
-  border-bottom: 1px dashed var(--border);
-  color: var(--muted);
+  padding: 0.45rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
 }
+
+.nations li a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.nations li a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+  text-decoration: underline;
+}
+
 .client-info {
   padding: 4rem 0;
   background-color: var(--bg, #ffffff);
