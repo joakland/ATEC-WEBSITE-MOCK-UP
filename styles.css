@@ -462,6 +462,7 @@ a:hover {
   font-weight: bold;
 }
 
+
 .sntc-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -471,7 +472,7 @@ a:hover {
 .info-card {
   background: #f9f9f9;
   padding: 25px;
-  border-left: 4px solid #c0392b; color */
+  border-left: 4px solid #c0392b; 
   border-radius: 4px;
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
@@ -647,6 +648,44 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   filter: brightness(1.15); 
 }
+
+.partners-section-alt {
+  padding: 5rem 0;
+}
+
+.partners-glass-card {
+  max-width: 75rem;
+  height: 30rem;
+  margin: 0 auto;
+  padding: 3.5rem 2rem;
+  border-radius: 12px;
+  background-image: linear-gradient(rgba(17, 24, 39, 0.82), rgba(17, 24, 39, 0.9)), url('media/un-perfekt-handshake-4002834_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.partners-glass-card h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.partners-glass-card p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*4. ABOUT PAGE PANEL SPECIFIC PAGE LAYOUT*/
 .about-split-row {
   display: grid;
