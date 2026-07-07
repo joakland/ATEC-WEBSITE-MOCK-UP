@@ -578,7 +578,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./media/Screenshot 2026-07-02 142215.png'); 
+  background-image: url('media/Screenshot 2026-07-02 142215.png'); 
   background-size: cover;
   background-position: center;
   padding: 200px 20px;
