@@ -1739,6 +1739,7 @@ ul.checks li::before {
 
 .community-dropdown {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 summary.indigenous-callout {
