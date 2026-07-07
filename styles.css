@@ -679,16 +679,18 @@ a:hover {
 
 .partners-glass-card {
   max-width: 75rem;
-  height: 30rem;
+  min-height: 30rem; 
+  height: auto; 
   margin: 0 auto;
   padding: 3.5rem 2rem;
   border-radius: 12px;
-  background-image: linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.68)), url('media/un-perfekt-handshake-4002834_1920.jpg');
+  background-image: linear-gradient(rgba(17, 24, 39, 0.65), rgba(17, 24, 39, 0.75)), url('media/un-perfekt-handshake-4002834_1920.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center; 
 }
 
 .partners-glass-card h2 {
@@ -705,9 +707,26 @@ a:hover {
   color: #e2e8f0;
   max-width: 700px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+/* FIX 3: Mobile Media Query */
+@media (max-width: 768px) {
+  .partners-section-alt {
+    padding: 3rem 0; 
+  }
+  
+  .partners-glass-card {
+    min-height: auto; 
+    padding: 2.5rem 1.5rem; 
+  }
+  
+  .partners-glass-card h2 {
+    font-size: 2rem; 
+  }
+  
+  .partners-glass-card p {
+    font-size: 1.1rem; 
+  }
 }
 
 /*4. ABOUT PAGE PANEL SPECIFIC PAGE LAYOUT*/
