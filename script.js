@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // Check all interactive inputs
       const inputsToValidate = form.querySelectorAll('input, select, textarea');
       inputsToValidate.forEach(input => validateField(input));
 
@@ -115,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
           formStatus.style.display = 'none';
         }
 
-        // Grab data safely via modern FormData API using the input fields' name attribute
         const dataPayload = new FormData(form);
         const firstName = dataPayload.get('firstName') || 'there';
         const recipient = dataPayload.get('recipient') || 'General Inquiry';
@@ -145,37 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
-  }
-
-  // ==========================================
-  // 5. IMAGE CAROUSEL SLIDER CONTROLS
-  // ==========================================
-  const track = document.querySelector('.slider-track');
-  const images = document.querySelectorAll('.slider-track img');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-
-  if (track && images.length > 0) {
-    let currentIndex = 0;
-    const totalSlides = images.length;
-
-    function updateSliderPosition() {
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex >= totalSlides - 1) ? 0 : currentIndex + 1;
-        updateSliderPosition();
-      });
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex <= 0) ? totalSlides - 1 : currentIndex - 1;
-        updateSliderPosition();
-      });
-    }
   }
 
 });
