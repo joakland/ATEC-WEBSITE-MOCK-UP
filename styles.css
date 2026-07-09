@@ -550,6 +550,146 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   filter: brightness(1.15); 
 }
+/* Collage Section */
+.collage-section {
+  padding: 80px 20px;
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.collage-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 550px; 
+  margin: 0 auto;
+}
+
+/* --- THE SCATTERED CARDS --- */
+.collage-card {
+  position: absolute;
+  background: #ffffff;
+  padding: 12px 12px 18px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              z-index 0.4s step-start;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.collage-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+/* --- INDIVIDUAL CARD SIZES, POSITIONS, & ROTATIONS --- */
+.card-1 {
+  width: 280px;
+  height: 200px;
+  top: 10%;
+  left: 5%;
+  transform: rotate(-6deg);
+}
+
+.card-2 {
+  width: 240px;
+  height: 300px;
+  top: 5%;
+  left: 32%;
+  transform: rotate(4deg);
+  z-index: 2; 
+}
+
+.card-3 {
+  width: 310px;
+  height: 220px;
+  top: 15%;
+  right: 8%;
+  transform: rotate(-3deg);
+}
+
+.card-4 {
+  width: 260px;
+  height: 240px;
+  bottom: 8%;
+  left: 12%;
+  transform: rotate(5deg);
+  z-index: 2;
+}
+
+.card-5 {
+  width: 320px;
+  height: 220px;
+  bottom: 5%;
+  left: 40%;
+  transform: rotate(-4deg);
+}
+
+.card-6 {
+  width: 230px;
+  height: 290px;
+  bottom: 12%;
+  right: 5%;
+  transform: rotate(7deg);
+  z-index: 3; 
+}
+
+.card-7 {
+  width: 210px;
+  height: 270px;
+  top: 22%;
+  left: -5%;
+  transform: rotate(8deg);
+  z-index: 2;
+}
+
+.card-8 {
+  width: 220px;
+  height: 280px;
+  top: 25%;
+  right: -12%;
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+/* --- THE HOVER LIFTOFF EFFECT --- */
+.collage-card:hover {
+  transform: scale(1.1) rotate(0deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18); 
+  z-index: 99; 
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+/* --- RESPONSIVE FIX FOR SMALLER SCREEN SIZES --- */
+@media (max-width: 768px) {
+  .collage-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  
+  .collage-card {
+    position: relative;
+    width: 100% !important;
+    height: 250px !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: rotate(0deg) !important; 
+  }
+  
+  .collage-card:hover {
+    transform: scale(1.03);
+  }
+}
 /* PARTNERS SECTION */
 .partners-section-alt {
   padding: 5rem 0;
@@ -987,7 +1127,7 @@ a:hover {
 /*7. ISET / OFFICE INFO & PROGRAM BLOCK PAGE LAYOUTS*/
 /* Layout Structural Wrapper */
 .content-wrapper {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -1003,10 +1143,10 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.subtitle {
+.intro-section p {
   font-size: 16px;
-  color: #666;
-  max-width: 700px;
+  color: #555;
+  max-width: 800px;
   margin: 0 auto;
 }
 
