@@ -314,24 +314,13 @@ a:hover {
 .hero-video-container {
   position: relative;
   width: 100%;
-  height: 85vh; /* Increased slightly for a grand look */
+  height: 75vh;
   min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-/* --- BACKGROUND SLIDESHOW LAYER --- */
-.hero-video-container {
-  position: relative;
-  width: 100%;
-  height: 85vh;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  background-color: #000000;
 }
 
 /* --- BACKGROUND SLIDESHOW --- */
@@ -352,7 +341,7 @@ a:hover {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: heroFadeSequence 45s infinite ease-in-out;
+  animation: heroFadeSequence 40s infinite ease-in-out;
 }
 
 /* --- TIMING DELAYS FOR EACH OF THE 9 IMAGES --- */
@@ -364,8 +353,6 @@ a:hover {
 .hero-slideshow-background img:nth-child(6) { animation-delay: 25s; }
 .hero-slideshow-background img:nth-child(7) { animation-delay: 30s; }
 .hero-slideshow-background img:nth-child(8) { animation-delay: 35s; }
-.hero-slideshow-background img:nth-child(9) { animation-delay: 40s; }
-
 /* --- SMOOTH CROSS-FADE KEYFRAMES --- */
 @keyframes heroFadeSequence {
   0% { opacity: 0; }
