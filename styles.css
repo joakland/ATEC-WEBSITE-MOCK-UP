@@ -1729,6 +1729,18 @@ summary.indigenous-callout::after {
   margin: 1rem;
   text-align: justify;
 }
+.bcateam-text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px;
+}
+.bcateam-p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-dark, #1f2937);
+  margin: 1rem;
+  text-align: justify;
+}
 /*10. CONTACT PAGE FORM LAYOUTS */
 .contact-section {
   display: flex;
