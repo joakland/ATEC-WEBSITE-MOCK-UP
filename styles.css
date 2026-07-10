@@ -777,6 +777,35 @@ a:hover {
   font-weight: bold;
 }
 
+.about-details-block {
+  margin-top: 40px;
+}
+
+.details-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+.region-callout-box {
+  background-color: #f3f4f6;
+  border-left: 4px solid var(--accent, #1b4d3e); 
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #1f2937;
+  margin-top: 30px;
+}
+
+.region-callout-box strong {
+  color: var(--accent, #1b4d3e);
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
 .nations-bg-section {
   background-image: linear-gradient(rgba(17, 24, 39, 0.60), rgba(17, 24, 39, 0.70)), url('media/oakland.secwepemc.2.png');
   background-size: cover;
@@ -1304,10 +1333,12 @@ a:hover {
 }
 
 .video-wrapper {
-  margin-top: 30px;
+  margin-top: 40px;
   width: 100%;
   max-width: 1000px;
   align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .video-wrapper iframe {
@@ -1514,6 +1545,123 @@ ul.checks li::before {
   margin-top: 15px;
   font-weight: 500;
   color: var(--primary-color);
+}
+/* --- Career Cruising CONTAINER --- */
+.resource-feature-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 850px;
+  margin: 2rem auto;
+}
+/* --- TITLE & BADGE --- */
+.card-header-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.resource-badge {
+  align-self: flex-start;
+  background-color: #f3f4f6;
+  color: var(--primary-color, #1b4d3e);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.resource-card-title {
+  font-size: 2.2rem;
+  color: var(--primary-color, #1b4d3e);
+  margin: 0;
+  font-weight: 700;
+}
+/* --- BODY TEXT & BULLETS --- */
+.resource-intro {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+.resource-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+}
+
+.resource-features-list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+/* Custom bullet icon matching your theme color */
+.resource-features-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent, #1b4d3e);
+  font-weight: bold;
+}
+/* --- ACCESS CALL TO ACTION BOX --- */
+.resource-cta-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #f9fafb;
+  border-left: 4px solid var(--accent, #1b4d3e);
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+}
+
+.cta-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.resource-cta-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1f2937;
+  margin: 0;
+}
+
+.resource-cta-text strong {
+  display: block;
+  color: var(--primary-color, #1b4d3e);
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+}
+
+/* --- MOBILE RESPONSIVE TWEAKS --- */
+@media (max-width: 600px) {
+  .resource-feature-card {
+    padding: 24px;
+  }
+  
+  .resource-card-title {
+    font-size: 1.75rem;
+  }
+  
+  .resource-cta-block {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .cta-icon {
+    display: none; /* Hide the emoji on ultra-small screens to save landscape space */
+  }
 }
 /*FIRST NATIONS COMMUNITIES DROPDOWN*/
 .community-dropdown {
