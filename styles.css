@@ -1273,7 +1273,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  max-width: 70%;
+  max-width: 80%;
   backdrop-filter: blur(5px);
 }
 
