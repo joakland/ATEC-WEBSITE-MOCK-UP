@@ -1659,32 +1659,29 @@ summary.indigenous-callout::after {
 }
 /* 9.VIDEOS PAGE*/
 /*DOCUMENTARY VIDEO SECTION*/
-.documentary-section, 
-.bcateam-video-section {
+.documentary-section {
   max-width: var(--max-width, 1140px);
-  margin: 50px auto;
+  margin: 10rem auto;
   padding: 10px 24px;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
 }
 
-.documentary-title,
-.bcateam-title {
+.documentary-title {
   color: var(--accent);
   font-size: 3rem;
   text-align: start;
   text-decoration: underline 3px;
+  margin-bottom: 2rem;
 }
 
 .documentary-hero-media {
   width: 100%;
   margin-bottom: 40px; 
 }
-
+/* --- RESPONSIVE VIDEO WRAPPER --- */
 .video-responsive-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%; /* Perfect 16:9 Aspect Ratio */
   height: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -1700,7 +1697,7 @@ summary.indigenous-callout::after {
   height: 100%;
   border: 0;
 }
-
+/* --- CREDITS ROW --- */
 .documentary-credits {
   margin-top: 16px;
   font-size: 0.82rem;
@@ -1715,7 +1712,7 @@ summary.indigenous-callout::after {
 .documentary-credits strong {
   color: var(--primary-color, #1b4d3e);
 }
-
+/* --- ASYMMETRIC TEXT GRID --- */
 .documentary-text-columns {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -1726,19 +1723,6 @@ summary.indigenous-callout::after {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--text-dark, #1f2937);
-  margin: 1rem;
-  text-align: justify;
-}
-.bcateam-text-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 40px;
-}
-.bcateam-p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--text-dark, #1f2937);
-  margin: 1rem;
   text-align: justify;
 }
 /*10. CONTACT PAGE FORM LAYOUTS */
