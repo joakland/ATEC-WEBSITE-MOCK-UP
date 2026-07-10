@@ -356,10 +356,10 @@ a:hover {
 /* --- SMOOTH CROSS-FADE KEYFRAMES --- */
 @keyframes heroFadeSequence {
   0% { opacity: 0; }
-  2% { opacity: 1; }    /* Smooth fade in */
-  11% { opacity: 1; }   /* Stay fully visible (~4-5 seconds) */
-  13% { opacity: 0; }   /* Smooth fade out */
-  100% { opacity: 0; }  /* Stay hidden until the loop repeats */
+  5% { opacity: 1; }     /* Fades in slightly faster */
+  12.5% { opacity: 1; }  /* Stays fully visible */
+  20% { opacity: 0; }     /* Fades out more gradually, overlapping the next image's start */
+  100% { opacity: 0; }
 }
 
 /* --- CONTRAST PROTECTION & TYPOGRAPHY --- */
